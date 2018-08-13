@@ -1,0 +1,94 @@
+
+
+8, 160, 576, 3
+
+[8 5 18 2] right before starting deconv layers
+
+10 36
+
+20 72
+
+160 576
+
+
+
+
+1534053949.4413593
+final loss ?
+KEEP_PROB = 0.5 #lower value will help generalize more (but with fewer epochs, higher keep_prob creates more clearer segmentations)
+LEARNING_RATE = 0.0009 #high learning rate will cause overshooting and huge oscillations in loss. (i.e. even 0.009 - 10 times higher will completely ruin the training)
+IMAGE_SHAPE = (160, 576) #higher resolution will help segmenting in a more detailed fashion
+EPOCHS = 100
+BATCH_SIZE = 5 #with batch_size smaller, lower memory will be used as less number of images need to be loaded into memory, the training will go on in SGD fashion, and even with 1 epoch, the small batch size and SGD will make the training look like many epochs training if the trianing sets are somewhat similar (i.e. all roads and we're doing only 2 classes)
+NUM_CLASSES = 2 #the smaller the classes, the easier it is to segment 
+
+
+1534088328.511601
+final loss 0.069
+KEEP_PROB = 1 #lower value will help generalize more (but with fewer epochs, higher keep_prob creates more clearer segmentations)
+LEARNING_RATE = 0.0009 #high learning rate will cause overshooting and huge oscillations in loss. (i.e. even 0.009 - 10 times higher will completely ruin the training)
+IMAGE_SHAPE = (160, 576) #higher resolution will help segmenting in a more detailed fashion
+EPOCHS = 10
+BATCH_SIZE = 5 #with batch_size smaller, lower memory will be used as less number of images need to be loaded into memory, the training will go on in SGD fashion, and even with 1 epoch, the small batch size and SGD will make the training look like many epochs training if the trianing sets are somewhat similar (i.e. all roads and we're doing only 2 classes)
+NUM_CLASSES = 2 #the smaller the classes, the easier it is to segment using lower number of epochs and batch_size
+
+
+
+1534088953.9343712
+final loss 0.083
+KEEP_PROB = 0.5 #lower value will help generalize more (but with fewer epochs, higher keep_prob creates more clearer segmentations)
+LEARNING_RATE = 0.0009 #high learning rate will cause overshooting and huge oscillations in loss. (i.e. even 0.009 - 10 times higher will completely ruin the training)
+IMAGE_SHAPE = (160, 576) #higher resolution will help segmenting in a more detailed fashion
+EPOCHS = 10
+BATCH_SIZE = 5 #with batch_size smaller, lower memory will be used as less number of images need to be loaded into memory, the training will go on in SGD fashion, and even with 1 epoch, the small batch size and SGD will make the training look like many epochs training if the trianing sets are somewhat similar (i.e. all roads and we're doing only 2 classes)
+NUM_CLASSES = 2 #the smaller the classes, the easier it is to segment using lower number of epochs and batch_size
+
+
+1534089298.7401676
+final loss: 0.730
+KEEP_PROB = 0.5 #lower value will help generalize more (but with fewer epochs, higher keep_prob creates more clearer segmentations)
+LEARNING_RATE = 0.0009 #high learning rate will cause overshooting and huge oscillations in loss. (i.e. even 0.009 - 10 times higher will completely ruin the training)
+IMAGE_SHAPE = (160, 576) #higher resolution will help segmenting in a more detailed fashion
+EPOCHS = 1
+BATCH_SIZE = 50 #with batch_size smaller, lower memory will be used as less number of images need to be loaded into memory, the training will go on in SGD fashion, and even with 1 epoch, the small batch size and SGD will make the training look like many epochs training if the trianing sets are somewhat similar (i.e. all roads and we're doing only 2 classes)
+NUM_CLASSES = 2 #the smaller the classes, the easier it is to segment using lower number of epochs and batch_size
+
+
+1534090257.6866865
+KEEP_PROB = 0.8 #lower value will help generalize more (but with fewer epochs, higher keep_prob creates more clearer segmentations)
+LEARNING_RATE = 0.0009 #high learning rate will cause overshooting and huge oscillations in loss. (i.e. even 0.009 - 10 times higher will completely ruin the training)
+IMAGE_SHAPE = (160, 576) #higher resolution will help segmenting in a more detailed fashion
+EPOCHS = 1
+BATCH_SIZE = 5 #with batch_size smaller, lower memory will be used as less number of images need to be loaded into memory, the training will go on in SGD fashion, and even with 1 epoch, the small batch size and SGD will make the training look like many epochs training if the trianing sets are somewhat similar (i.e. all roads and we're doing only 2 classes)
+NUM_CLASSES = 2 #the smaller the classes, the easier it is to segment using lower number of epochs and batch_size
+
+1534091766.1552658
+KEEP_PROB = 0.8 #lower value will help generalize more (but with fewer epochs, higher keep_prob creates more clearer segmentations)
+LEARNING_RATE = 0.0009 #high learning rate will cause overshooting and huge oscillations in loss. (i.e. even 0.009 - 10 times higher will completely ruin the training)
+IMAGE_SHAPE = (160, 576) #higher resolution will help segmenting in a more detailed fashion
+EPOCHS = 50
+BATCH_SIZE = 5 #with batch_size smaller, lower memory will be used as less number of images need to be loaded into memory, the training will go on in SGD fashion, and even with 1 epoch, the small batch size and SGD will make the training look like many epochs training if the trianing sets are somewhat similar (i.e. all roads and we're doing only 2 classes)
+NUM_CLASSES = 2 #the smaller the classes, the easier it is to segment using lower number of epochs and batch_size
+USE_L2_LOSS = True
+L2_LOSS_WEIGHT = 1
+
+1534093162.7588584
+final loss: 0.018
+KEEP_PROB = 0.8 #lower value will help generalize more (but with fewer epochs, higher keep_prob creates more clearer segmentations)
+LEARNING_RATE = 0.0009 #high learning rate will cause overshooting and huge oscillations in loss. (i.e. even 0.009 - 10 times higher will completely ruin the training)
+IMAGE_SHAPE = (160, 576) #higher resolution will help segmenting in a more detailed fashion
+EPOCHS = 50
+BATCH_SIZE = 5 #with batch_size smaller, lower memory will be used as less number of images need to be loaded into memory, the training will go on in SGD fashion, and even with 1 epoch, the small batch size and SGD will make the training look like many epochs training if the trianing sets are somewhat similar (i.e. all roads and we're doing only 2 classes)
+NUM_CLASSES = 2 #the smaller the classes, the easier it is to segment using lower number of epochs and batch_size
+USE_L2_LOSS = False
+
+1534094758.713707
+final loss: Loss: = 0.018
+KEEP_PROB = 0.8 #lower value will help generalize more (but with fewer epochs, higher keep_prob creates more clearer segmentations)
+LEARNING_RATE = 0.0009 #high learning rate will cause overshooting and huge oscillations in loss. (i.e. even 0.009 - 10 times higher will completely ruin the training)
+IMAGE_SHAPE = (160, 576) #higher resolution will help segmenting in a more detailed fashion
+EPOCHS = 50
+BATCH_SIZE = 5 #with batch_size smaller, lower memory will be used as less number of images need to be loaded into memory, the training will go on in SGD fashion, and even with 1 epoch, the small batch size and SGD will make the training look like many epochs training if the trianing sets are somewhat similar (i.e. all roads and we're doing only 2 classes)
+NUM_CLASSES = 2 #the smaller the classes, the easier it is to segment using lower number of epochs and batch_size
+USE_L2_LOSS = True
+L2_LOSS_WEIGHT = 0.01
